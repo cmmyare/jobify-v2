@@ -9,7 +9,7 @@ try {
     "mongodb+srv://dere:dere959788@cluster0.5kif0.mongodb.net/JOBIFY?retryWrites=true&w=majority&appName=Cluster0"
   );
   // const user = await User.findOne({ email: 'john@gmail.com' });
-  const user = await User.findOne({ email: "dere12@gmail.com" });
+  const user = await User.findOne({ email: "sab@gmail.com" });
   //console.log("this is the admin user: ", user);
   const jsonJobs = JSON.parse(
     await readFile(new URL("./utils/MOCK_DATA.json", import.meta.url))

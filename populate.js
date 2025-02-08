@@ -11,7 +11,7 @@ try {
   // const user = await User.findOne({ email: 'john@gmail.com' });
   const user = await User.findOne({ email: "sab@gmail.com" });
   //console.log("this is the admin user: ", user);
-  const jsonJobs = JSON.parse(
+  const jsonJobs = JSON.parse( 
     await readFile(new URL("./utils/MOCK_DATA.json", import.meta.url))
   );
   const jobs = jsonJobs.map((job) => {
